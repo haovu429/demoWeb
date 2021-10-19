@@ -1,0 +1,24 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="demoWeb:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/demoWeb_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="demoWeb" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="apache.taglibs.standard.spec" />
+          <element id="library" level="project" name="apache.taglibs.standard.impl" />
+          <element id="library" level="project" name="javax.servlet.jstl" />
+          <element id="library" level="project" name="jtds-1.3.1" />
+          <element id="library" level="project" name="ojdbc6" />
+          <element id="library" level="project" name="sqljdbc4" />
+          <element id="library" level="project" name="Maven: javax.mvc:javax.mvc-api:1.0.0" />
+          <element id="library" level="project" name="Maven: org.apache.taglibs:taglibs-standard-spec:1.2.5" />
+          <element id="library" level="project" name="Maven: org.apache.taglibs:taglibs-standard-impl:1.2.5" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="demoWeb/web/Web" />
+    </root>
+  </artifact>
+</component>
