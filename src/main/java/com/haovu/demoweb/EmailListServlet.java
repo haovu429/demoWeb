@@ -6,7 +6,6 @@ import java.io.IOException;
 
 import com.haovu.business.User;
 import com.haovu.data.UserDB;
-import jakarta.servlet.annotation.*;
 
 /*@WebServlet(urlPatterns={"/emailList"},
         initParams={@InitParam(name="relativePathToFile",
