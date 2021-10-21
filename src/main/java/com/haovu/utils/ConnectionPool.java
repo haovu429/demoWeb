@@ -12,6 +12,7 @@ public class ConnectionPool {
 
     private ConnectionPool() {
         try {
+            System.out.println("Da vao khoi tao Pool");
             InitialContext ic = new InitialContext();
             dataSource = (DataSource)
                     ic.lookup("java:/comp/env/jdbc/murach");
@@ -28,6 +29,7 @@ public class ConnectionPool {
 
     public Connection getConnection() {
         try {
+            System.out.println("Da chay vao get con");
             return dataSource.getConnection();
         } catch (SQLException e) {
             System.out.println(e);
