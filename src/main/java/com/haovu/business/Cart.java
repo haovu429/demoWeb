@@ -18,6 +18,7 @@ public class Cart implements Serializable {
     public int getCount() {
         return items.size();
     }
+
     public void addItem(LineItem item) {
         String code = item.getProduct().getCode();
         int quantity = item.getQuantity();

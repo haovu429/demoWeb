@@ -9,10 +9,10 @@ public class MySQLConnUtils {
     public static Connection getMySQLConnection()
             throws ClassNotFoundException, SQLException {
         // Chú ý: Thay đổi các thông số kết nối cho phù hợp.
-        String hostName = "localhost";
-        String dbName = "murach";
-        String userName = "root";
-        String password = "azkaban11";
+        String hostName = "us-cdbr-east-04.cleardb.com";
+        String dbName = "heroku_1c11f491448b1cd";
+        String userName = "b23e1ada7923d9";
+        String password = "dd49b115";
         return getMySQLConnection(hostName, dbName, userName, password);
     }
 

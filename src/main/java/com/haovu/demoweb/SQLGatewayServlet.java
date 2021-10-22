@@ -1,5 +1,6 @@
 package com.haovu.demoweb;
 
+import com.haovu.utils.ConnectionUtils;
 import com.haovu.utils.SQLUtil;
 
 import javax.servlet.*;
@@ -23,15 +24,9 @@ public class SQLGatewayServlet extends HttpServlet {
 
         String sqlStatement = request.getParameter("sqlStatement");
         String sqlResult = "";
-        System.out.println("Da vao roi");
         try {
             // load the driver
-            Class.forName("com.mysql.jdbc.Driver");
-            String dbURL = "jdbc:mysql://us-cdbr-east-04.cleardb.com:3306/heroku_694309d1b8d95e5";//"jdbc:mysql://localhost:3306/murach"
-            String username = "b6acfdf2968d26";
-            String password = "bda8f065";
-            Connection connection = DriverManager.getConnection(
-                    dbURL, username, password);
+            Connection connection = ConnectionUtils.getMyConnection();
 
             // create a statement
             Statement statement = connection.createStatement();

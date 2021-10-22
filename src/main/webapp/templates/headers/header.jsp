@@ -42,7 +42,7 @@
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="<%=request.getContextPath()%>/emailList">Join email</a>
                     <a class="dropdown-item" href="<%=request.getContextPath()%>/table/table.jsp">Table</a>
-                    <a class="dropdown-item" href="<%=request.getContextPath()%>/ShowItem.jsp">Buy Music</a>
+                    <a class="dropdown-item" href="<%=request.getContextPath()%>/cart">Buy Music</a>
                     <a class="dropdown-item" href="<%=request.getContextPath()%>/ExecuteMySQL.jsp">MySQL</a>
                     <a class="dropdown-item" href="<%=request.getContextPath()%>/TestBoxChat.jsp">Test Boxchat</a>
                 </div>
