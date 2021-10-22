@@ -1,1 +1,1 @@
-we11b: ja11va $JAVA_OPTS -jar webapp-runner.jar ${WEBAPP_RUNNER_OPTS} --port $PORT /demoWeb_war.war
+web: java $JAVA_OPTS -jar webapp-runner.jar ${WEBAPP_RUNNER_OPTS} --port $PORT ./demoWeb_war.war
