@@ -24,6 +24,7 @@
                 <tr>
                     <td>
                         <form action="" method="post">
+                            <input type="hidden" name="action" value="cart"/>
                             <input type="hidden" name="productCode"
                                    value="<c:out value='${item.product.code}'/>">
                             <input type=text name="quantity"

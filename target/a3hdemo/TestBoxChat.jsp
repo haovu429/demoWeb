@@ -15,7 +15,18 @@
     <h1>Đây là trang test boxchat!</h1>
     <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
+    <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
     <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "108265524976346");
+        chatbox.setAttribute("attribution", "biz_inbox");
+
         window.fbAsyncInit = function() {
             FB.init({
                 xfbml            : true,
@@ -29,13 +40,7 @@
             js = d.createElement(s); js.id = id;
             js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
             fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
-
-    <!-- Your Chat Plugin code -->
-    <div class="fb-customerchat"
-         attribution="install_email"
-         attribution_version="biz_inbox"
-         page_id="108265524976346">
-    </div>
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
 </body>
 </html>
