@@ -75,7 +75,7 @@
                 <configuration>
                     <appName>a3hdemo</appName>
                 </configuration>
-                
+
 			</plugin>
 			<plugin>
             <groupId>org.apache.maven.plugins</groupId>
