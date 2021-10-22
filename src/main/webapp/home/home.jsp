@@ -14,6 +14,7 @@
         <h2>Hãy thoả sức lựa chọn những đôi giày mang phong cách của bạn</h2>
     </section>
     <!--End of Tawk.to Script-->
+    <a id="scrollUp" href="#top" title="Lên Top" style="position: fixed; z-index: 2147483647; display: block;"><i class="ion-android-arrow-up"></i></a>
     <footer>
         <jsp:include page="/templates/footers/footer.jsp"></jsp:include>
     </footer>

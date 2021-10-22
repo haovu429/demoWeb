@@ -9,7 +9,7 @@
         <unpackNestedArchives>false</unpackNestedArchives>
       </options>
     </properties>
-    <root id="archive" name="demoWeb-1.0-SNAPSHOT.war">
+    <root id="archive" name="a3hdemo.war">
       <element id="artifact" artifact-name="demoWeb:war exploded" />
     </root>
   </artifact>
