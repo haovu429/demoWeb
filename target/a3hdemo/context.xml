@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/ch12email">
+
+    <Resource name="jdbc/heroku_1c11f491448b1cd" auth="Container"
+              driverClassName="com.mysql.jdbc.Driver"
+              url="jdbc:mysql://us-cdbr-east-04.cleardb.com:3306/heroku_1c11f491448b1cd?autoReconnect=true"
+              username="b23e1ada7923d9" password="dd49b115"
+              maxActive="100" maxIdle="30" maxWait="10000"
+              logAbandoned="true" removeAbandoned="true"
+              removeAbandonedTimeout="60" type="javax.sql.DataSource" />
+
+</Context>

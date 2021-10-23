@@ -85,7 +85,7 @@
                             <outputDirectory>/target/a3hdemo/META-INF/context.xml</outputDirectory> <!--${basedir}-->
                             <resources>
                                 <resource>
-                                    <directory>src/main/webapp/META-INF/context.xml</directory>
+                                    <directory>src/main/webapp/META-INF</directory>
                                     <filtering>true</filtering>
                                 </resource>
                             </resources>
