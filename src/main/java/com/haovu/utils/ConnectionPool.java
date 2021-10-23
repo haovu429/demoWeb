@@ -15,7 +15,7 @@ public class ConnectionPool {
             System.out.println("Da vao khoi tao Pool");
             InitialContext ic = new InitialContext();
             dataSource = (DataSource)
-                    ic.lookup("java:/comp/env/jdbc/murach");
+                    ic.lookup("java:/comp/env/jdbc/heroku_1c11f491448b1cd");
         } catch (NamingException e) {
             System.out.println(e);
         }
