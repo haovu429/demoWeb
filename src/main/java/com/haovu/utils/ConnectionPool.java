@@ -1,6 +1,10 @@
 package com.haovu.utils;
 
 import java.sql.*;
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.Map;
+import javax.naming.Context;
 import javax.sql.DataSource;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
@@ -13,7 +17,10 @@ public class ConnectionPool {
     private ConnectionPool() {
         try {
             System.out.println("Da vao khoi tao Pool");
-            InitialContext ic = new InitialContext();
+
+            /*Hashtable env = new Hashtable();
+            env.put(Context.INITIAL_CONTEXT_FACTORY, "com.sun.jndi.ldap.LdapCtxFactory");*/
+            Context ic = new InitialContext();
             dataSource = (DataSource)
                     ic.lookup("java:/comp/env/jdbc/heroku_1c11f491448b1cd");
         } catch (NamingException e) {
