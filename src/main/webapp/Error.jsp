@@ -9,7 +9,7 @@
 <body>
     <jsp:include page="/templates/headers/header.jsp"></jsp:include>
     <h1>Error</h1>
-    <h2><%=exception.getMessage() %><br/> </h2>
+    <h2><%=exception.getMessage()%></h2>
     <button type="button" onclick="quay_lai_trang_truoc()">Return</button>
     <script>
         function quay_lai_trang_truoc(){
