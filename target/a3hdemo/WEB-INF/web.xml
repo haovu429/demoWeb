@@ -42,9 +42,10 @@
 
     <context-param>
         <param-name>javax.faces.CONFIG_FILES</param-name>
-        <param-value>/META-INF/Context.xml</param-value>
+        <param-value>/META-INF/context.xml</param-value>
     </context-param>
 
+    
 
     <error-page>
         <error-code>404</error-code>
