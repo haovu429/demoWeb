@@ -9,8 +9,10 @@ import javax.sql.DataSource;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 
+
 public class ConnectionPool {
 
+    private Connection con;
     private static ConnectionPool pool = null;
     private static DataSource dataSource = null;
 
@@ -18,9 +20,12 @@ public class ConnectionPool {
         try {
             System.out.println("Da vao khoi tao Pool");
 
-            /*Hashtable env = new Hashtable();
-            env.put(Context.INITIAL_CONTEXT_FACTORY, "com.sun.jndi.ldap.LdapCtxFactory");*/
-            Context ic = new InitialContext();
+            Hashtable env = new Hashtable();
+            env.put(Context.INITIAL_CONTEXT_FACTORY, "java:/comp/");
+            /*SimpleNamingContextBuilder builder = new SimpleNamingContextBuilder();
+            builder.bind("jdbc/Oracle", ods);
+            builder.activate();*/
+            Context ic = new InitialContext(env);
             dataSource = (DataSource)
                     ic.lookup("java:/comp/env/jdbc/heroku_1c11f491448b1cd");
         } catch (NamingException e) {
@@ -37,7 +42,8 @@ public class ConnectionPool {
     public Connection getConnection() {
         try {
             System.out.println("Da chay vao get con");
-            return dataSource.getConnection();
+            con = C3p0DataSource.getConnection("Ket noi pool");
+            return con;
         } catch (SQLException e) {
             System.out.println(e);
             return null;
