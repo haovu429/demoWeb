@@ -10,7 +10,7 @@
         <jsp:include page="/templates/headers/header.jsp"></jsp:include>
     </header>
     <section style="color: burlywood; font-family: 'Roboto Light';font-size: larger">
-        <h1>Chào mừng bạn đến với a3h shop.</h1>
+        <h1>Chào mừng bạn.</h1>
         <h2>Hãy thoả sức lựa chọn những đôi giày mang phong cách của bạn</h2>
     </section>
     <!--End of Tawk.to Script-->
