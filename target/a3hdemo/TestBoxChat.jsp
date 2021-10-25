@@ -9,7 +9,7 @@
 <html>
 <head>
     <title>Title</title>
-    <link rel="apple-touch-icon" sizes="57x57" href="/resources/images/icon/apple-icon-57x57.png">
+    <%--<link rel="apple-touch-icon" sizes="57x57" href="/resources/images/icon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/resources/images/icon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/resources/images/icon/apple-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="76x76" href="/resources/images/icon/apple-icon-76x76.png">
@@ -26,9 +26,9 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <LINK REL="SHORTCUT ICON"  HREF="/resources/images/icon/running-shoes-1.ico">
-
-    <link rel='shortcut icon' href='/resources/images/favicon.ico' />
+    <LINK REL="SHORTCUT ICON"  HREF="/resources/images/icon/running-shoes-1.ico">--%>
+    <link rel="shortcut icon" href="/resources/images/favicon(1).ico" type="image/x-icon" />
+    <%--<link rel='shortcut icon' href='/resources/images/favicon(1).ico' />--%>
 </head>
 <body>
     <%--<jsp:include page="/templates/headers/header.jsp"></jsp:include>--%>
