@@ -3,6 +3,8 @@ package com.haovu.dao;
 import com.haovu.business.Product;
 import com.haovu.utils.ConnectionUtils;
 
+import javax.lang.model.util.Types;
+import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -72,4 +74,29 @@ public class ProductDAO {
         }
         return list;
     }
+    /*public List<Product> searchByName(String txtSearch) {
+        List<Product> list = new ArrayList<>();
+        String query = "select * from Product\n" +"Where [name] like ?";
+        try {
+            conn = new ConnectionUtils().getMyConnection();//mo ket noi voi sql
+//            ps = conn.prepareStatement(query);
+//            ps.setString(1,"%"+ txtSearch+"%");
+//            rs = ps.executeQuery();
+
+            CallableStatement command = conn.prepareCall("{? = call fn_SearchProductName(?) }");
+            command.setString(1,  txtSearch);
+            command.registerOutParameter();
+            ResultSet rs = command.executeQuery();
+            while (rs.next()) {
+                list.add(new Product(rs.getInt(1),
+                        rs.getString(2),
+                        rs.getString(3),
+                        rs.getDouble(4),
+                        rs.getString(5),
+                        rs.getString(6)));
+            }
+        } catch (Exception e) {
+        }
+        return list;
+    }*/
 }
